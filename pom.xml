@@ -9,7 +9,10 @@
 	<name>aws-batch-docker-java</name>
 	<description>AWS Batch Docker - Java</description>
 	<properties>
-		<maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
 	</properties>
 	<dependencies>
 
@@ -20,8 +23,10 @@
 			<plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.10.1</version>
     <configuration>
-        <release>17</release>
+        <source>17</source>
+        <target>17</target>
     </configuration>
 </plugin>
 		</plugins>
