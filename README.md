@@ -2,6 +2,10 @@
 
 ## Aws Batch Docker Java
 
+### Todo
+
+- Update <docker-id>
+
 ### Build Application
 
 mvn clean package
@@ -12,11 +16,11 @@ java -jar ./target/aws-batch-docker-java-1.0.0.jar
 
 ### Create Image
 
-docker build -t xxx/aws-batch-docker-java .
+docker build -t <docker-id>/aws-batch-docker-java .
 
 ### Run Image
 
-docker run xxx/aws-batch-docker-java
+docker run <docker-id>/aws-batch-docker-java
 
 ### Login to Running Container
 
@@ -24,6 +28,6 @@ docker exec -ti loving_knuth /bin/sh
 
 ### Push Image
 
-docker push xxx/aws-batch-docker-java
+docker push <docker-id>/aws-batch-docker-java
 
 
