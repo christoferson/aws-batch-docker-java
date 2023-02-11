@@ -4,7 +4,7 @@
 
 ### Todo
 
-- Update <docker-id>
+- Update ${docker-id}
 
 ### Build Application
 
@@ -16,11 +16,11 @@ java -jar ./target/aws-batch-docker-java-1.0.0.jar
 
 ### Create Image
 
-docker build -t <docker-id>/aws-batch-docker-java .
+docker build -t ${docker-id}/aws-batch-docker-java .
 
 ### Run Image
 
-docker run <docker-id>/aws-batch-docker-java
+docker run ${docker-id}/aws-batch-docker-java
 
 ### Login to Running Container
 
@@ -28,6 +28,17 @@ docker exec -ti loving_knuth /bin/sh
 
 ### Push Image
 
-docker push <docker-id>/aws-batch-docker-java
+docker push ${docker-id}/aws-batch-docker-java
 
 
+## Batch Parameters
+
+
+```
+{"Parameters": {"name":"test"}, "ContainerOverrides": { "Command": ["echo","Ref::name"] } }
+````
+
+
+## Links
+
+- https://aws.amazon.com/premiumsupport/knowledge-center/batch-parameters-trigger-eventbridge/?nc1=h_ls
