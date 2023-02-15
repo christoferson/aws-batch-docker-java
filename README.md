@@ -39,6 +39,11 @@ docker push ${docker-id}/aws-batch-docker-java
 ````
 
 
+
+
+
 ## Links
 
 - https://aws.amazon.com/premiumsupport/knowledge-center/batch-parameters-trigger-eventbridge/?nc1=h_ls
+
+- https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setup-project-maven.html
